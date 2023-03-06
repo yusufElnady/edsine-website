@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EDSINE Homepage</title>
+        
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        
+        <!--stylesheets-->
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+        <!--icon-->
+        <link rel="icon" href="images/icon.ico">
+
+        <script>
+            let details = navigator.userAgent;
+
+            let regexp = /android|iphone|kindle|ipad/i;
+
+            let isMobileDevice = regexp.test(details);
+
+            if (!isMobileDevice || window.innerHeight < window.innerWidth) {
+            //alert("desktop device!");
+            } else {
+            //alert("mobile device!");
+            }
+       </script>
+    </head>
+
+    <body>
+        <!--navbar-->
+        <div class="navbar-container" style="background-color: #e3f2fd;">
+            <a href="index.html"><img src="images/logo.jpg" height="100%" alt="logo"></a>
+                <!--title-->
+                <div style="place-self: start left; padding: 1vw;">
+                    <p style="font-family: 'Alfa Slab One'; font-size: 5vw; margin: 0px; place-self: start center; width: fit-content;">EDSINE</p>
+                    <p style="font-size: 1vw; margin: 0px;">Education and simulation for nuclear engineering</p>
+                </div>
+                
+                <!--navigation links-->
+                <div style="place-self: center right; padding-right: 10%;">
+                    <div style="display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto;">
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-lg dropbtn" style="display: grid; grid-template-columns: auto auto;">Products <p style="font-size: 50%; place-self: center center; margin: 0px; padding-left: 100%;">▼</p></button>
+
+                            <div class="dropdown-list">
+                                <a href=".html"><button class="drop-option btn btn-outline-secondary text-nowrap btn-lg btn-block">NPP Models</button></a>
+
+                                <a href=".html"><button class="drop-option btn btn-outline-secondary text-nowrap btn-lg btn-block">Accident Scenarios</button></a>
+
+                                <a href=".html"><button class="drop-option btn btn-outline-secondary text-nowrap btn-lg btn-block">Custom Models</button></a>
+                            </div>
+                        </div>
+                        
+                        <a href="about.html"><button class="btn btn-primary btn-lg">About Us</button></a>
+                        
+                        <a href="contact.html"><button class="btn btn-primary btn-lg">Contact Us</button></a>
+                    </div>
+                </div>
+        </div>
+        
+        <!--main content-->
+        <div style="padding: 3%;">
+            <div style="padding: 5%; padding-top: 0%;">
+                <h1>Who are we?</h1>
+                <p class="answer">
+                    We are a start up based in Alexandria, Egypt, consisting of several proffessors and engineers from the nuclear engineering department in the faculty of engineering ....
+                </p>
+
+                <!--the nuclear engineering team-->
+                <h1>The nuclear engineering team</h1>
+                <div id="nucteam" style="display: grid; grid-template-columns: 30% 30% 30%; text-align: center;" class="answer">
+                    <div style="padding: 3%;">
+                        <img src="images/img1.png" width="100%" height="auto" alt="Dr. Hanaa Abou Gabal">
+                        <p>Dr. Hanaa Abou Gabal</p>
+                    </div>
+                    <div style="padding: 3%;">
+                        <img src="images/img1.png" width="100%" height="auto" alt="Dr. Ayah El-Shahat">
+                        <p>Dr. Ayah El-Shahat</p>
+                    </div>
+                    <div style="padding: 3%;">
+                        <img src="images/img1.png" width="100%" height="auto" alt="Eng. Mohammed Anwar">
+                        <p>Eng. Mohammed Anwar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

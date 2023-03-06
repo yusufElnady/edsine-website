@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-container {
+    display: grid;
+    grid-template-columns: 10vw auto auto;
+    grid-template-rows: 10vw;
+    padding: 1vw;
+}
+
+.answer {
+    margin-left: 3%;
+}
+
+h1 {
+    font-size: 4vw;
+    background-color: black;
+    color: white;
+    border-style: dashed;
+    padding: 15px;
+    width: fit-content;
+}
+
+p {
+    font-size: 1.75vw;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    min-width: fit-content;
+    background-color: #e3f2fd;
+    text-align: center;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
+    animation: fadeIn 0.75s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.dropdown-list a {
+    display: inline-block;
+    width: 100%;
+}
+
+.drop-option {
+    width: 100%;
+}
